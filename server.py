@@ -20,4 +20,5 @@ def json_api():
         lista, dia = dict(get_data()), datetime.strftime(datetime.today(), '%d')
         return jsonify(lista)
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int("5000"), debug=True)
