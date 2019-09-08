@@ -9,7 +9,7 @@ app = Flask(__name__)
 # First update
 lista, dia = dict(get_data()), datetime.strftime(datetime.today(), '%d')
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def json_api():
     global lista, dia
     
@@ -21,4 +21,5 @@ def json_api():
         return jsonify(lista)
 
 if __name__ == "__main__":
+    # when using docker, it is important to define host and port
     app.run(host="0.0.0.0", port=int("5000"), debug=True)

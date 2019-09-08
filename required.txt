@@ -1,5 +1,8 @@
 # pip3 install -r required.txt
-Flask
+flask
+flask-sqlalchemy
+flask-marshmallow
+marshmallow-sqlalchemy
 itsdangerous
 Jinja2
 lxml

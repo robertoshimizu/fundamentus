@@ -11,4 +11,4 @@ EXPOSE 5000
 
 COPY . .
 
-CMD [ "python", "./server.py" ]
+CMD [ "python", "./app.py" ]
