@@ -9,6 +9,6 @@ RUN pip install -r required.txt
 
 EXPOSE 5000
 
-COPY . .
+#COPY . .
 
-CMD [ "python", "./app.py" ]
+CMD [ "python", "./server.py" ]
